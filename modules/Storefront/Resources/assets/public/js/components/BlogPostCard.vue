@@ -23,7 +23,7 @@
             </a>
 
             <div class="blog-post-body">
-                <ul class="list-inline blog-post-meta">
+                <!-- <ul class="list-inline blog-post-meta">
                     <li class="d-flex align-items-center">
                         <i class="las la-user"></i>
                         {{ blogPost.user_name }}
@@ -33,7 +33,7 @@
                         <i class="las la-calendar"></i>
                         {{ dateFormat(blogPost.created_at, "dd mmm, yyyy") }}
                     </li>
-                </ul>
+                </ul> -->
 
                 <h3 class="blog-post-title">
                     <a :href="route('blog_posts.show', blogPost.slug)">

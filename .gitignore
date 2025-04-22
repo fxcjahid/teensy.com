@@ -15,7 +15,7 @@ node_modules/
 vendor/
 
 #Assets
-public/build/
+# public/build/
 public/pwa/
 modules/*/Resources/assets/public/fonts/*
 
@@ -32,4 +32,7 @@ public/sitemaps/*
 public/sitemap.xml
 .php-cs-fixer.cache
 yarn.lock
+composer.lock
+package-lock.json
 modules/*/yarn.lock
+modules/*/package-lock.json

@@ -56,7 +56,7 @@
                     </div>
                 </div>
 
-                @include('storefront::public.home.sections.slider_banners')
+                {{-- @include('storefront::public.home.sections.slider_banners') --}}
             </div>
         </div>
     </div>

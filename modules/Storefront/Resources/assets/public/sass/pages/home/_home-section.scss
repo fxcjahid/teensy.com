@@ -12,7 +12,7 @@
     margin-left: 287px;
 
     .home-slider-wrap {
-        width: 70%;
+        width: 100%;
         padding: 0 12px;
         height: 520px;
     }
@@ -37,34 +37,34 @@
     }
 }
 
-@media screen and (max-width: 1800px) {
-    .home-section-inner {
-        .home-slider-wrap {
-            width: 67%;
-        }
+// @media screen and (max-width: 1800px) {
+//     .home-section-inner {
+//         .home-slider-wrap {
+//             width: 67%;
+//         }
 
-        .home-banner-wrap {
-            width: 33%;
-        }
-    }
-}
+//         .home-banner-wrap {
+//             width: 33%;
+//         }
+//     }
+// }
 
-@media screen and (max-width: 1600px) {
-    .home-section-inner {
-        .home-slider-wrap {
-            width: 65%;
-        }
+// @media screen and (max-width: 1600px) {
+//     .home-section-inner {
+//         .home-slider-wrap {
+//             width: 65%;
+//         }
 
-        .home-banner-wrap {
-            width: 35%;
-        }
+//         .home-banner-wrap {
+//             width: 35%;
+//         }
 
-        .home-banner-wrap,
-        .home-slider-wrap {
-            height: 480px;
-        }
-    }
-}
+//         .home-banner-wrap,
+//         .home-slider-wrap {
+//             height: 480px;
+//         }
+//     }
+// }
 
 @media screen and (max-width: 1500px) {
     .home-section-inner {
@@ -92,7 +92,7 @@
 @media screen and (max-width: 1300px) {
     .home-section-inner {
         .home-slider-wrap {
-            width: 65%;
+            width: 100%;
         }
 
         .home-banner-wrap {
@@ -151,17 +151,17 @@
     }
 }
 
-@media screen and (max-width: 1255px) {
-    .home-section-inner {
-        .home-slider-wrap {
-            width: 66.9%;
-        }
+// @media screen and (max-width: 1255px) {
+//     .home-section-inner {
+//         .home-slider-wrap {
+//             width: 66.9%;
+//         }
 
-        .home-banner-wrap {
-            width: 33.1%;
-        }
-    }
-}
+//         .home-banner-wrap {
+//             width: 33.1%;
+//         }
+//     }
+// }
 
 @media screen and (max-width: $xl) {
     .home-section-inner {

@@ -13,6 +13,10 @@
         <featured-categories :data="{{ json_encode($featuredCategories) }}"></featured-categories>
     @endif
 
+    @if (setting('storefront_three_column_banners_enabled'))
+        <banner-three-column :data="{{ json_encode($threeColumnBanners) }}"></banner-three-column>
+    @endif
+
     @if (setting('storefront_three_column_full_width_banners_enabled'))
         <banner-three-column-full-width :data="{{ json_encode($threeColumnFullWidthBanners) }}">
         </banner-three-column-full-width>
@@ -42,9 +46,6 @@
         <product-grid :data="{{ json_encode($productGrid) }}"></product-grid>
     @endif
 
-    @if (setting('storefront_three_column_banners_enabled'))
-        <banner-three-column :data="{{ json_encode($threeColumnBanners) }}"></banner-three-column>
-    @endif
 
     @if (setting('storefront_product_tabs_2_section_enabled'))
         <product-tabs-two :data="{{ json_encode($tabProductsTwo) }}"></product-tabs-two>

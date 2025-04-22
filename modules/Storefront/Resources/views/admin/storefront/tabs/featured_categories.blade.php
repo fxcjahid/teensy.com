@@ -75,5 +75,53 @@
                 'featuredCategories' => true,
             ])
         </div>
+
+        <div class="box-content clearfix">
+            <h4 class="section-title">{{ trans('storefront::storefront.form.category_7') }}</h4>
+
+            {{ Form::select('storefront_featured_categories_section_category_7_category_id', trans('storefront::attributes.category'), $errors, $categories, $settings) }}
+
+            @include('storefront::admin.storefront.tabs.partials.products', [
+                'fieldNamePrefix' => 'storefront_featured_categories_section_category_7',
+                'products' => $categorySixProducts,
+                'featuredCategories' => true,
+            ])
+        </div>
+
+        <div class="box-content clearfix">
+            <h4 class="section-title">{{ trans('storefront::storefront.form.category_8') }}</h4>
+
+            {{ Form::select('storefront_featured_categories_section_category_8_category_id', trans('storefront::attributes.category'), $errors, $categories, $settings) }}
+
+            @include('storefront::admin.storefront.tabs.partials.products', [
+                'fieldNamePrefix' => 'storefront_featured_categories_section_category_8',
+                'products' => $categorySixProducts,
+                'featuredCategories' => true,
+            ])
+        </div>
+
+        <div class="box-content clearfix">
+            <h4 class="section-title">{{ trans('storefront::storefront.form.category_9') }}</h4>
+
+            {{ Form::select('storefront_featured_categories_section_category_9_category_id', trans('storefront::attributes.category'), $errors, $categories, $settings) }}
+
+            @include('storefront::admin.storefront.tabs.partials.products', [
+                'fieldNamePrefix' => 'storefront_featured_categories_section_category_9',
+                'products' => $categorySixProducts,
+                'featuredCategories' => true,
+            ])
+        </div>
+
+        <div class="box-content clearfix">
+            <h4 class="section-title">{{ trans('storefront::storefront.form.category_10') }}</h4>
+
+            {{ Form::select('storefront_featured_categories_section_category_10_category_id', trans('storefront::attributes.category'), $errors, $categories, $settings) }}
+
+            @include('storefront::admin.storefront.tabs.partials.products', [
+                'fieldNamePrefix' => 'storefront_featured_categories_section_category_10',
+                'products' => $categorySixProducts,
+                'featuredCategories' => true,
+            ])
+        </div>
     </div>
 </div>
