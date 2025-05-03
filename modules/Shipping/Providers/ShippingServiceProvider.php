@@ -20,8 +20,8 @@ class ShippingServiceProvider extends ServiceProvider
         }
 
         $this->registerFreeShipping();
-        $this->registerLocalPickup();
-        $this->registerFlatRate();
+        $this->registerInsdieDhakaShipping();
+        $this->registerOutsideDhakaShipping();
     }
 
 
@@ -35,28 +35,31 @@ class ShippingServiceProvider extends ServiceProvider
             return new Method('free_shipping', setting('free_shipping_label'), 0);
         });
     }
-
-
-    private function registerLocalPickup()
+    private function registerInsdieDhakaShipping()
     {
-        if (!setting('local_pickup_enabled')) {
+        if (! setting('inside_dhaka_enabled')) {
             return;
         }
 
-        ShippingMethod::register('local_pickup', function () {
-            return new Method('local_pickup', setting('local_pickup_label'), setting('local_pickup_cost') ?? 0);
+        ShippingMethod::register('inside_dhaka', function () {
+            return new Method('inside_dhaka',
+                setting('inside_dhaka_label'),
+                setting('inside_dhaka_cost'),
+            );
         });
     }
 
-
-    private function registerFlatRate()
+    private function registerOutsideDhakaShipping()
     {
-        if (!setting('flat_rate_enabled')) {
+        if (! setting('outside_dhaka_enabled')) {
             return;
         }
 
-        ShippingMethod::register('flat_rate', function () {
-            return new Method('flat_rate', setting('flat_rate_label'), setting('flat_rate_cost') ?? 0);
+        ShippingMethod::register('outside_dhaka', function () {
+            return new Method('outside_dhaka',
+                setting('outside_dhaka_label'),
+                setting('outside_dhaka_cost'),
+            );
         });
     }
 }

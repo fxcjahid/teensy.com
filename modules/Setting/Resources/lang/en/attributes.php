@@ -92,13 +92,13 @@ return [
     'translatable.free_shipping_label' => 'Label',
     'free_shipping_min_amount' => 'Minimum Amount',
 
-    'local_pickup_enabled' => 'Status',
-    'translatable.local_pickup_label' => 'Label',
-    'local_pickup_cost' => 'Cost',
+    'inside_dhaka_enabled' => 'Status',
+    'inside_dhaka_label' => 'Label',
+    'inside_dhaka_cost' => 'Cost',
 
-    'flat_rate_enabled' => 'Status',
-    'translatable.flat_rate_label' => 'Label',
-    'flat_rate_cost' => 'Cost',
+    'outside_dhaka_enabled'  => 'Status',
+    'outside_dhaka_label'    => 'Label',
+    'outside_dhaka_cost' => 'Cost',
 
     'paypal_enabled' => 'Status',
     'translatable.paypal_label' => 'Label',

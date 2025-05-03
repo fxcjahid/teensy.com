@@ -39,6 +39,8 @@ return [
         'cod' => 'Cash On Delivery',
         'bank_transfer' => 'Bank Transfer',
         'check_payment' => 'Check / Money Order',
+        'inside_dhaka'  => 'Inside Dhaka',
+        'outside_dhaka' => 'Outside Dhaka',
     ],
     'form' => [
         'logo' => 'Logo',

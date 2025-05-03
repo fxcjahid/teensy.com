@@ -58,7 +58,7 @@ class HomePageComposer
 
     private function getFeaturedCategories()
     {
-        $categoryIds = Collection::times(6, function ($number) {
+        $categoryIds = Collection::times(10, function ($number) {
             if (!is_null(setting("storefront_featured_categories_section_category_{$number}_product_type"))) {
                 return setting("storefront_featured_categories_section_category_{$number}_category_id");
             }

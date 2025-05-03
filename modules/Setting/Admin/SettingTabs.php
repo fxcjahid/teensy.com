@@ -43,24 +43,24 @@ class SettingTabs extends Tabs
 
         $this->group('shipping_methods', trans('setting::settings.tabs.group.shipping_methods'))
             ->add($this->freeShipping())
-            ->add($this->localPickup())
-            ->add($this->flatRate());
+            ->add($this->InsideDhaka())
+            ->add($this->OutsideDhaka());;
 
         $this->group('payment_methods', trans('setting::settings.tabs.group.payment_methods'))
-            ->add($this->paypal())
-            ->add($this->stripe())
-            ->add($this->paytm())
-            ->add($this->razorpay())
-            ->add($this->instamojo())
-            ->add($this->authorizenet())
-            ->add($this->paystack())
-            ->add($this->mercadopago())
-            ->add($this->flutterwave())
-            ->add($this->payfast())
-            ->add($this->iyzico())
-            ->add($this->cod())
-            ->add($this->bankTransfer())
-            ->add($this->checkPayment());
+            // ->add($this->paypal())
+            // ->add($this->stripe())
+            // ->add($this->paytm())
+            // ->add($this->razorpay())
+            // ->add($this->instamojo())
+            // ->add($this->authorizenet())
+            // ->add($this->paystack())
+            // ->add($this->mercadopago())
+            // ->add($this->flutterwave())
+            // ->add($this->payfast())
+            // ->add($this->iyzico())
+            // ->add($this->bankTransfer())
+            // ->add($this->checkPayment())
+            ->add($this->cod());
     }
 
 
@@ -311,6 +311,29 @@ class SettingTabs extends Tabs
         });
     }
 
+        private function InsideDhaka() {
+        return tap(new Tab('inside_dhaka', trans('setting::settings.tabs.inside_dhaka')), function (Tab $tab) {
+            $tab->weight(45);
+            $tab->fields([
+                'inside_dhaka_enabled',
+                'translatable.inside_dhaka_label',
+                'inside_dhaka_cost',
+            ]);
+            $tab->view('setting::admin.settings.tabs.inside_dhaka');
+        });
+    }
+
+    private function OutsideDhaka() {
+        return tap(new Tab('outside_dhaka', trans('setting::settings.tabs.outside_dhaka')), function (Tab $tab) {
+            $tab->weight(45);
+            $tab->fields([
+                'outside_dhaka_enabled',
+                'translatable.outside_dhaka_label',
+                'outside_dhaka_cost',
+            ]);
+            $tab->view('setting::admin.settings.tabs.outside_dhaka');
+        });
+    }
 
     private function localPickup()
     {
